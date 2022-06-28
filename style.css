@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+:root{
+    --branco: white;
+    --rosa-branco: rgb(253, 241, 247);
+    --rosa-clarissimo: rgb(253, 201, 214);
+    --rosa-claro: rgb(253, 215, 231);
+    --rosa-escuro: rgb(238, 111, 164);
+    --rosa-super-escuro: rgb(201, 77, 128);
+    --rosa-escurissimo: rgb(163, 43, 93);
+    --cinza-clarissimo: rgb(206, 206, 206);
+    --cinza-claro: rgb(153, 153, 153);
+    --cinza-escuro: rgb(80, 80, 80);    
+    --azul-caneta: rgb(30, 30, 105);
+}
+
+::selection{
+    background-color: var(--cinza-claro);
+    color: var(--branco);
+}
+
+*{
+    user-select: none;
+}
+
+body{
+    background-color: var(--rosa-claro);
+    color: var(--cinza-escuro);
+    font-family: 'Quicksand', sans-serif;
+
+    width: 100vw;
+    height: 100vh;    
+}
