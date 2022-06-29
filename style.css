@@ -32,3 +32,14 @@ body{
     width: 100vw;
     height: 100vh;    
 }
+
+.dados-dia{
+    background-color: var(--cinza-escuro);
+    color: var(--rosa-branco);
+    padding: 1rem 2rem;
+}
+
+h1{
+    font-family: 'Corinthia', cursive;
+    font-size: 600%;
+}
