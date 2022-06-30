@@ -1,6 +1,8 @@
 const DIASEMANA_NAV= $("#dia-semana-nav");
 const DIA_NAV= $("#dia-nav");
 const MES_NAV= $("#mes-nav");
+const QNTDTAREFAS_NAV= $("#qntd-tarefas-nav");
+
 
 const atualizarData= () => {
     const diasSemana= ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
@@ -16,5 +18,6 @@ const atualizarData= () => {
 $(document).ready( () => {
 
     atualizarData();
+    QNTDTAREFAS_NAV.text(0);
    
 });
