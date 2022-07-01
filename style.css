@@ -43,3 +43,27 @@ h1{
     font-family: 'Corinthia', cursive;
     font-size: 600%;
 }
+
+.form-control{
+    user-select: text;
+    margin-right: .2rem;
+}
+
+.form-control, .form-control:focus{
+    background-color: var(--rosa-branco);
+    border-color: var(--rosa-clarissimo);
+    color: var(--cinza-escuro);
+}
+
+.form-control:focus{
+    box-shadow: 0 0 .5rem var(--branco);
+}
+
+.fa-circle-plus{
+    font-size: 3rem;
+}
+
+.fa-circle-plus:hover{
+    cursor: pointer;
+    color: var(--rosa-escuro);
+}
