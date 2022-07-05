@@ -6,7 +6,7 @@ const QNTDTAREFAS_NAV= $("#qntd-tarefas-nav");
 const ADD_BOTAO= $("#add-botao");
 const TAREFA_INPUT= $("#nova-tarefa");
 const HORARIO_INPUT= $("#novo-horario");
-
+const ALERTA_PAR= $("#alerta");
 
 const atualizarData= () => {
     const diasSemana= ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
@@ -29,6 +29,32 @@ $(document).ready( () => {
     QNTDTAREFAS_NAV.text(0);
     limparCampos();
 
+    ADD_BOTAO.click( () => {
 
-   
+        const MSG_TAM= "A mensagem deve conter até 30 caracteres.";
+        const MSG_BRANCO= "Todos os campos devem ser preenchidos."   
+        
+        ALERTA_PAR.addClass("invisible");
+        ALERTA_PAR.text("");
+
+        const novaTarefa= TAREFA_INPUT.val();
+        const novoHorario= HORARIO_INPUT.val();
+
+        if(novaTarefa.length > 30){
+            ALERTA_PAR.removeClass("invisible");
+            ALERTA_PAR.text(MSG_TAM);
+        }
+        
+        if(!novaTarefa || !novoHorario){
+            ALERTA_PAR.removeClass("invisible");
+            ALERTA_PAR.text(MSG_BRANCO);
+        }
+        
+        if(ALERTA_PAR.hasClass("invisible")){
+            alert('ok');
+    
+            limparCampos();
+        }
+    });
+
 });

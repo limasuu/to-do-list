@@ -67,3 +67,7 @@ h1{
     cursor: pointer;
     color: var(--rosa-escuro);
 }
+
+.text-danger{
+    height: 1rem;
+}
