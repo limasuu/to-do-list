@@ -8,6 +8,8 @@ const TAREFA_INPUT= $("#nova-tarefa");
 const HORARIO_INPUT= $("#novo-horario");
 const ALERTA_PAR= $("#alerta");
 
+const TAREFAS_UL= $("ul");
+
 const atualizarData= () => {
     const diasSemana= ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
     const meses= ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -51,10 +53,23 @@ $(document).ready( () => {
         }
         
         if(ALERTA_PAR.hasClass("invisible")){
-            alert('ok');
-    
+            $(`<li class='col-md-12 d-flex justify-content-between align-items-center flex-wrap'>           
+                <hr class="sublinhado"/>
+                <i class="fa-regular fa-heart"></i>                   
+                <span class="tarefa col-md-8">
+                    ${novaTarefa}                         
+                </span>                                    
+                <span class="tarefa col-md-3">
+                    ${novoHorario}
+                </span>                                         
+                <i class="botao-tarefa fa-solid fa-check"></i> 
+                <i class="botao-tarefa fa-solid fa-trash-can"></i>                                                     
+            </li>`).appendTo('ul');
+   
+                
             limparCampos();
         }
     });
 
+   
 });

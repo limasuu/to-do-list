@@ -71,3 +71,42 @@ h1{
 .text-danger{
     height: 1rem;
 }
+
+li{
+    width:100%;
+    position: relative;
+    list-style: none;
+}
+
+.sublinhado{
+    border: 1px solid var(--cinza-escuro);
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 100%;
+}
+
+.fa-heart{
+    font-size: .5rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.1rem;
+}
+
+.tarefa{    
+    font-family: 'Corinthia', cursive;
+    font-size: 2.2rem;    
+    color: var(--azul-caneta);   
+    word-wrap: break-word; 
+}
+
+.botao-tarefa{
+    color: var(--rosa-escuro);
+    margin: 0 .25rem;
+    font-size: 1rem;
+}
+
+.botao-tarefa:hover{
+    cursor: pointer;
+    color: var(--rosa-super-escuro);
+}
