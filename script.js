@@ -20,6 +20,8 @@ const atualizarData= () => {
     MES_NAV.text(meses[data.getMonth()]);
 };
 
+const atualizarQntdTarefas= () => QNTDTAREFAS_NAV.text($('li').length);
+
 const limparCampos= () => {
     TAREFA_INPUT.val("");
     HORARIO_INPUT.val("");
@@ -28,7 +30,7 @@ const limparCampos= () => {
 $(document).ready( () => {
 
     atualizarData();
-    QNTDTAREFAS_NAV.text(0);
+    atualizarQntdTarefas();
     limparCampos();
 
     ADD_BOTAO.click( () => {
@@ -66,10 +68,9 @@ $(document).ready( () => {
                 <i class="botao-tarefa fa-solid fa-trash-can"></i>                                                     
             </li>`).appendTo('ul');
    
-                
+            atualizarQntdTarefas();    
             limparCampos();
         }
     });
 
-   
 });
