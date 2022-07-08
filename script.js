@@ -73,4 +73,9 @@ $(document).ready( () => {
         }
     });
 
+    TAREFAS_UL.on('click', '.fa-trash-can', function(){
+        $(this).parent('li').remove();      
+        atualizarQntdTarefas();
+    });
+   
 });
