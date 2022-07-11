@@ -110,3 +110,8 @@ li{
     cursor: pointer;
     color: var(--rosa-super-escuro);
 }
+
+.tarefa-concluida .tarefa{
+    text-decoration: line-through;
+    color: var(--cinza-claro);
+}
