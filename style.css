@@ -157,4 +157,10 @@ li{
     .botao-tarefa{
         margin: 0 1rem;
     }
- } 
+} 
+
+@media only screen and (max-width: 575px){
+    h1{
+        font-size: 400%;
+    }
+}
