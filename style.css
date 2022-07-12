@@ -115,3 +115,46 @@ li{
     text-decoration: line-through;
     color: var(--cinza-claro);
 }
+
+
+@media only screen and (max-width: 767px){
+    
+    li{
+        background-color: var(--cinza-escuro); 
+        padding: 1rem 2rem;     
+        margin: .2rem 0;  
+        border-radius: 1rem;
+    }
+
+    .tarefa{    
+        color: var(--rosa-branco);     
+        font-family: 'Quicksand', sans-serif; 
+        font-size: 1.2rem;  
+        margin-bottom: .5rem;
+    }
+
+    .tarefa-concluida{    
+        background-color: var(--cinza-clarissimo); 
+    }
+
+    .tarefa-concluida .tarefa{    
+        text-decoration: none;
+        color: var(--cinza-escuro); 
+    }
+
+    .tarefa-concluida .botao-tarefa{
+        color: var(--rosa-escuro);
+    }
+
+    .tarefa-concluida .botao-tarefa:hover{
+        color: var(--rosa-escurissimo);
+    }
+
+    .sublinhado, .fa-heart{
+        display: none;
+    }
+
+    .botao-tarefa{
+        margin: 0 1rem;
+    }
+ } 
